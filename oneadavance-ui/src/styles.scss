@@ -1,0 +1,116 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/vendors/vendors.min.css";
+@import "assets/css/themes/vertical-modern-menu-template/materialize.css";
+@import "assets/css/themes/vertical-modern-menu-template/style.css";
+@import "assets/css/pages/login.css";
+
+@import "assets/vendors/data-tables/css/jquery.dataTables.min.css";
+@import "assets/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css";
+@import "assets/vendors/data-tables/css/select.dataTables.min.css";
+@import "assets/vendors/sweetalert/sweetalert.css";
+
+@import "assets/vendors/select2/select2.min.css";
+@import "assets/vendors/select2/select2-materialize.css";
+@import "assets/css/pages/form-select2.css";
+
+
+
+@import "assets/css/themes/vertical-modern-menu-template/materialize.css";
+@import "assets/css/themes/vertical-modern-menu-template/style.css";
+@import "assets/css/pages/data-tables.css";
+
+@import "assets/css/custom/custom.css";
+
+@import "assets/css/pages/charts-chartist.min.css";
+@import "assets/css/pages/charts-sparkline.min.css";
+
+@import "assets/vendors/dropify/css/dropify.min.css";
+
+#spinner {
+  position: fixed;
+  top: 0; left: 0; z-index: 9999;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.2s;
+}
+
+#spinner .loading {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%);
+}
+
+#spinner {
+  visibility: hidden;
+  opacity: 0;
+}
+#spinner.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+
+div.error {
+  font-size: .8rem;
+  position: relative;
+  top: 0rem;
+  left: 0rem;
+  transform: translateY(0%);
+  color: #ff4081;
+}

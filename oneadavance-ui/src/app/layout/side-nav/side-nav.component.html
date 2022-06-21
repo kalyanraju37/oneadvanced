@@ -1,0 +1,246 @@
+<app-topbar></app-topbar>
+
+<!-- BEGIN: SideNav-->
+<aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-light sidenav-active-square">
+    <div class="brand-sidebar">
+        <h1 class="logo-wrapper"><a href="#" [routerLink]="['home']">
+                <img src="../assets/stepbucklogo.png" alt="stebuck logo" width='180'
+                    style="display:block;margin-left: auto;margin-right:auto;margin-top:3px;" /></a>
+            <!-- <span class="logo-text hide-on-med-and-down">stepbuck</span> -->
+            <!-- <a class="navbar-toggler"
+                href="#"><i class="material-icons">radio_button_checked</i></a> -->
+        </h1>
+    </div>
+    <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed menu-shadow" id="slide-out"
+        data-menu="menu-navigation" data-collapsible="menu-accordion">
+        <li class="bold"><a routerLinkActive="active" [routerLink]="['home']"><i
+                    class="material-icons">settings_input_svideo</i><span class="menu-title"
+                    data-i18n="Dashboard">Dashboard</span></a>
+        </li>
+
+
+        <!-- Privileges & Roles -->
+
+        <li class="bold" [routerLinkActive]="['open', 'active']" [routerLinkActiveOptions]="{exact: true}"><a
+                class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)"><i
+                    class="material-icons">tune</i><span class="menu-title" data-i18n="Privileges & Roles">Roles &
+                    Privileges</span></a>
+            <div class="collapsible-body">
+                <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+                    <li><a href="#" routerLinkActive="active" [routerLink]="['roles']"><i
+                                class="material-icons">radio_button_unchecked</i><span data-i18n="View Roles">View
+                                Roles</span></a>
+                    </li>
+                    <li><a href="#" routerLinkActive="active" [routerLink]="['privileges']"><i
+                                class="material-icons">radio_button_unchecked</i><span data-i18n="View Privileges">View
+                                Privileges</span></a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <!-- Users -->
+
+        <li class="bold" [routerLinkActive]="['open', 'active']" [routerLinkActiveOptions]="{exact: true}"><a
+                class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)"><i
+                    class="material-icons">group</i><span class="menu-title" data-i18n="User">Users</span></a>
+            <div class="collapsible-body">
+                <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+                    <li><a href="#" routerLinkActive="active" [routerLink]="['app-users']"><i
+                                class="material-icons">radio_button_unchecked</i><span data-i18n="View Users">View
+                                App Users</span></a>
+                    </li>
+                    <li><a href="#" routerLinkActive="active" [routerLink]="['other-users']"><i
+                                class="material-icons">radio_button_unchecked</i><span data-i18n="Other Users">View
+                                Other Users</span></a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="bold"><a routerLinkActive="active" [routerLink]="['user-daily-steps']"><i
+                    class="material-icons">directions_run</i><span class="menu-title" data-i18n="dailySteps">Users
+                    Daily Steps</span></a>
+        </li>
+
+        <li class="bold"><a routerLinkActive="active" [routerLink]="['user-stepbucks']"><i
+                    class="material-icons">transfer_within_a_station</i><span class="menu-title"
+                    data-i18n="user-stepbucks">Users Stepbucks Compiled</span></a>
+        </li>
+
+        <li class="bold"><a routerLinkActive="active" [routerLink]="['user-groups']"><i
+                    class="material-icons">wc</i><span class="menu-title" data-i18n="user-groups">User Groups</span></a>
+        </li>
+
+        <li class="bold"><a routerLinkActive="active" [routerLink]="['user-referrals']"><i
+                    class="material-icons">group_add</i><span class="menu-title" data-i18n="user-referrals">User
+                    Referrals</span></a>
+        </li>
+
+
+
+        <!-- Vendors -->
+
+        <li class="bold" [routerLinkActive]="['open', 'active']" [routerLinkActiveOptions]="{exact: true}"><a
+                class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)"><i
+                    class="material-icons">contacts</i><span class="menu-title" data-i18n="User">Vendors</span></a>
+            <div class="collapsible-body">
+                <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+                    <li><a href="#" routerLinkActive="active" [routerLink]="['vendors']"><i
+                                class="material-icons">radio_button_unchecked</i><span
+                                data-i18n="View Vendors">Vendors</span></a>
+                    </li>
+                    <!-- <li><a href="#" routerLinkActive="active" [routerLink]="['plans']"><i
+                                class="material-icons">radio_button_unchecked</i><span
+                                data-i18n="Plans">Plans</span></a>
+                    </li>
+                    <li><a href="#" routerLinkActive="active" [routerLink]="['vendor-transactions']"><i
+                                class="material-icons">radio_button_unchecked</i><span
+                                data-i18n="Transaction">Transactions</span></a>
+                    </li> -->
+                </ul>
+            </div>
+        </li>
+
+
+
+
+
+        <!-- Products & Coupons -->
+
+        <li class="bold" [routerLinkActive]="['open', 'active']" [routerLinkActiveOptions]="{exact: true}"><a
+                class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)"><i
+                    class="material-icons">add_shopping_cart</i><span class="menu-title" data-i18n="User">Products &
+                    Coupons</span></a>
+            <div class="collapsible-body">
+                <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+                    <li><a href="#" routerLinkActive="active" [routerLink]="['categories']"><i
+                                class="material-icons">radio_button_unchecked</i><span
+                                data-i18n="Categories">Categories</span></a>
+                    </li>
+                    <li><a href="#" routerLinkActive="active" [routerLink]="['products']"><i
+                                class="material-icons">radio_button_unchecked</i><span
+                                data-i18n="Products">Products</span></a>
+                    </li>
+                    <li><a href="#" routerLinkActive="active" [routerLink]="['coupons']"><i
+                                class="material-icons">radio_button_unchecked</i><span
+                                data-i18n="Plans">Coupons</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </li>
+
+
+
+        <!-- Orders & Transactions -->
+
+        <li class="bold" [routerLinkActive]="['open', 'active']" [routerLinkActiveOptions]="{exact: true}"><a
+                class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)"><i
+                    class="material-icons">dvr</i><span class="menu-title" data-i18n="Orders & Transactions">Orders &
+                    Transactions</span></a>
+            <div class="collapsible-body">
+                <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+                    <li><a href="#" routerLinkActive="active" [routerLink]="['transactions']"><i
+                                class="material-icons">radio_button_unchecked</i><span
+                                data-i18n="Transactions">Transactions</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </li>
+
+        <!-- Stepshop -->
+
+        <li class="bold" [routerLinkActive]="['open', 'active']" [routerLinkActiveOptions]="{exact: true}"><a
+                class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)"><i
+                    class="material-icons">store</i><span class="menu-title" data-i18n="User">StepShop</span></a>
+            <div class="collapsible-body">
+                <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+                    <li><a href="#" routerLinkActive="active" [routerLink]="['sections']"><i
+                                class="material-icons">radio_button_unchecked</i><span
+                                data-i18n="View Section">Sections</span></a>
+                    </li>
+                    <li><a href="#" routerLinkActive="active" [routerLink]="['stepshop']"><i
+                                class="material-icons">radio_button_unchecked</i><span
+                                data-i18n="stepshop">Section-Items</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </li>
+
+
+
+        <!-- Popups -->
+
+
+        <li class="bold"><a routerLinkActive="active" [routerLink]="['popups']"><i
+                    class="material-icons">chat_bubble_outline</i><span class="menu-title"
+                    data-i18n="Challenges">Popups</span></a>
+        </li>
+
+        <!-- Challenges -->
+        <li class="bold"><a routerLinkActive="active" [routerLink]="['challenges']"><i
+                    class="material-icons">check</i><span class="menu-title"
+                    data-i18n="Challenges">Challenges</span></a>
+        </li>
+
+        <!-- Events -->
+        <li class="bold"><a routerLinkActive="active" [routerLink]="['events']"><i class="material-icons">today</i><span
+                    class="menu-title" data-i18n="events">Events</span></a>
+        </li>
+
+        <li class="bold"><a routerLinkActive="active" [routerLink]="['notifications']"><i
+                    class="material-icons">chat_bubble_outline</i><span class="menu-title"
+                    data-i18n="notifications">Notifications</span></a>
+        </li>
+
+        <li class="bold"><a routerLinkActive="active" [routerLink]="['subscriptions']"><i
+                    class="material-icons">format_list_bulleted</i><span class="menu-title"
+                    data-i18n="notifications">Subscriptions</span></a>
+        </li>
+
+        <li class="bold"><a routerLinkActive="active" [routerLink]="['levels']"><i
+                    class="material-icons">clear_all</i><span class="menu-title"
+                    data-i18n="notifications">Levels/Podium</span></a>
+        </li>
+
+        <li class="bold"><a routerLinkActive="active" [routerLink]="['trending']"><i
+                    class="material-icons">clear_all</i><span class="menu-title"
+                    data-i18n="notifications">Trending</span></a>
+        </li>
+
+         <!-- Popups -->
+
+
+         <li class="bold"><a routerLinkActive="active" [routerLink]="['pushnotifications']"><i
+            class="material-icons">chat_bubble_outline</i><span class="menu-title"
+            data-i18n="PushNotifications">Push Notification</span></a>
+         </li>
+
+         <li class="bold"><a routerLinkActive="active" [routerLink]="['rewards']"><i
+            class="material-icons">chat_bubble_outline</i><span class="menu-title"
+            data-i18n="Rewards">Rewards</span></a>
+         </li>
+
+
+        <li class="bold"><a routerLinkActive="active" [routerLink]="['faq']"><i
+                    class="material-icons">help_outline</i><span class="menu-title" data-i18n="faqs">FAQs</span></a>
+        </li>
+    </ul>
+    <div class="navigation-background"></div><a
+        class="sidenav-trigger btn-sidenav-toggle btn-floating btn-medium waves-effect waves-light hide-on-large-only"
+        href="#" data-target="slide-out"><i class="material-icons">menu</i></a>
+</aside>
+<!-- END: SideNav-->
+
+
+
+<!-- BEGIN: Page Main-->
+<div id="main">
+    <div class="row">
+        <div class="content-wrapper-before gradient-45deg-indigo-purple"></div>
+        <router-outlet></router-outlet>
+    </div>
+</div>
